@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.lazaretov.testData.UserInfo.*;
 
-public class RegistrationFormWithFakerData {
+public class RegistrationFormWithObjectsTests {
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
 
     @BeforeAll
