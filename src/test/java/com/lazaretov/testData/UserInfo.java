@@ -8,7 +8,7 @@ import java.util.Locale;
 
 public class UserInfo {
 
-    private static final Faker faker = new Faker(new Locale("ru"));
+    private static final Faker faker = new Faker(new Locale("en"));
 
     public static String firstName = faker.name().firstName(),
             lastName = faker.name().lastName(),
