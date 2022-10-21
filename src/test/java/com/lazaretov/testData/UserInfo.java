@@ -25,16 +25,3 @@ public class UserInfo {
             year = generateYear(),
             date = day + " " + month + "," + year;
 }
-
-    /*LocalDate startDate = LocalDate.of(1900, 1, 1); //start date
-    long start = startDate.toEpochDay();
-        System.out.println(start);
-
-                LocalDate endDate = LocalDate.now(); //end date
-                long end = endDate.toEpochDay();
-                System.out.println(end);
-
-                long randomEpochDay = ThreadLocalRandom.current().nextLong(start, end);
-                String date = String.valueOf(LocalDate.ofEpochDay(randomEpochDay));
-                String day = String.valueOf(LocalDate.ofEpochDay(randomEpochDay).getDayOfMonth());
-                System.out.println(date + day); // random date between the range*/
