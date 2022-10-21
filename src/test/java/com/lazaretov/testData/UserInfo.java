@@ -21,7 +21,7 @@ public class UserInfo {
             city = "Karnal",
             address = faker.address().fullAddress(),
             gender = faker.demographic().sex(),
-            day = String.valueOf(faker.number().numberBetween(1, 31)),
+            day = String.format("%02d", faker.number().numberBetween(1,28)),
             month = String.valueOf(Month.getRandomMonth()),
             year = String.valueOf(faker.number().numberBetween(1950, 2010)),
             date = day + " " + month + "," + year;
