@@ -118,5 +118,4 @@ public class RegistrationFormPage {
 
         return this;
     }
-
 }

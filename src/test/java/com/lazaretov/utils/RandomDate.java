@@ -11,30 +11,25 @@ public class RandomDate {
     static long end = endDate.toEpochDay();
 
     static long randomEpochDay = ThreadLocalRandom.current().nextLong(start, end);
-        /*String date = String.valueOf(LocalDate.ofEpochDay(randomEpochDay));
-        String generateDay = String.valueOf(LocalDate.ofEpochDay(randomEpochDay).getDayOfMonth());*/
+        //String date = String.valueOf(LocalDate.ofEpochDay(randomEpochDay));
+        //String generateDay = String.valueOf(LocalDate.ofEpochDay(randomEpochDay).getDayOfMonth());
 
 
-    public static String generateDay() {
-
+    public static int generateDay() {
         LocalDate localDate = LocalDate.ofEpochDay(randomEpochDay);
-
-        return String.valueOf(localDate.getDayOfMonth());
+        int dayOfMonth = localDate.getDayOfMonth();
+        return dayOfMonth;
 
     }
 
     public static String generateMonth() {
-
         LocalDate localDate = LocalDate.ofEpochDay(randomEpochDay);
-
         return String.valueOf(localDate.getMonth());
 
     }
 
     public static String generateYear() {
-
         LocalDate localDate = LocalDate.ofEpochDay(randomEpochDay);
-
         return String.valueOf(localDate.getYear());
 
     }

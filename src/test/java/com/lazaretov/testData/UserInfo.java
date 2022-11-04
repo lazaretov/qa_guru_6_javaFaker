@@ -20,7 +20,7 @@ public class UserInfo {
             city = "Karnal",
             address = faker.address().fullAddress(),
             gender = faker.demographic().sex(),
-            day = String.format(generateDay(), "%02d"),
+            day = String.format("%02d", generateDay()),
             month = generateMonth().substring(0,1).toUpperCase() + generateMonth().substring(1).toLowerCase(),
             year = generateYear(),
             date = day + " " + month + "," + year;
